@@ -1,9 +1,6 @@
 const axios = require("axios");
 
 class Data {
-
-    baseLink = "";
-
     constructor(baseLink) {
         this.baseLink = baseLink;
     }
@@ -27,7 +24,6 @@ class Data {
     delete(id) {
         return axios.delete(`${this.baseLink}/${id}`);
     }
-
 }
 
 module.exports = Data;
