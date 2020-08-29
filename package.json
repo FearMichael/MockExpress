@@ -1,0 +1,16 @@
+{
+  "name": "testServer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dataController.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}
