@@ -14,6 +14,5 @@ app.use(express.static("public"));
 app.use("/posts", posts);
 app.use("/todos", todos);
 
-
 // Start the server on the port
-app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
+app.listen(PORT, () => console.info(`Listening on PORT: ${PORT}`));
