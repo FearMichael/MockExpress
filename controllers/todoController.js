@@ -25,4 +25,4 @@ class Todos extends Data {
     return this.delete(id);
   }
 }
-module.exports = Todos;
+module.exports = new Todos();

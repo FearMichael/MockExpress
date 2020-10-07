@@ -1,6 +1,5 @@
 const express = require("express");
-const posts = require("./routes/posts");
-const todos = require("./routes/todos");
+const routes = require("./routes/index");
 
 // Initialize the app and create a port
 const app = express();
@@ -11,8 +10,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-app.use("/posts", posts);
-app.use("/todos", todos);
+// Setup api routes
+app.use("/api", routes);
+
+// app.use("*", htmlRoutes);
 
 // Start the server on the port
 app.listen(PORT, () => console.info(`Listening on PORT: ${PORT}`));

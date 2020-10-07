@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"No Test Specified... proceeding...\" && exit 0",
     "start": "nodemon server.js",
-    "lint": "eslint ./"
+    "lint": "eslint ./ --fix"
   },
   "keywords": [],
   "author": "",
